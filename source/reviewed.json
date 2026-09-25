@@ -1,0 +1,2474 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "provider": "anthropic",
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/fable-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 10,
+        "output_per_million": 50,
+        "cache_read_per_million": 1
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+        "version": "2026-09-25",
+        "input_per_million": 10,
+        "output_per_million": 50,
+        "cache_read_per_million": 0.25
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5 (alias)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 1,
+        "output_per_million": 5,
+        "cache_read_per_million": 0.1
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4.5 (2025-10-01)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 1,
+        "output_per_million": 5,
+        "cache_read_per_million": 0.1
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-4-5",
+      "name": "Claude Opus 4.5 (alias)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-4-5-20251101",
+      "name": "Claude Opus 4.5 (2025-11-01)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-4-6/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-4-7/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 5,
+        "output_per_million": 25,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 4,
+        "output_per_million": 20,
+        "cache_read_per_million": 0.2
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5 (alias)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 3,
+        "output_per_million": 15,
+        "cache_read_per_million": 0.3
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-sonnet-4-5-20250929",
+      "name": "Claude Sonnet 4.5 (2025-09-29)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "budget"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000,
+        "reasoning_budget_min": 1024,
+        "reasoning_budget_max": 63999
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": false,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 3,
+        "output_per_million": 15,
+        "cache_read_per_million": 0.3
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "provider_default",
+          "off"
+        ],
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+        "version": "2026-09-25",
+        "input_per_million": 3,
+        "output_per_million": 15,
+        "cache_read_per_million": 0.3
+      }
+    },
+    {
+      "provider": "anthropic",
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1000000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "anthropic_messages",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "anthropic": {
+            "adaptive_thinking": true,
+            "temperature": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "version": "2026-09-25",
+        "input_per_million": 2,
+        "output_per_million": 10,
+        "cache_read_per_million": 0.2
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 1047576,
+        "max_output_tokens": 32768
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+        "version": "2026-09-25",
+        "input_per_million": 2.0,
+        "cache_read_per_million": 0.5,
+        "output_per_million": 8.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4.1-2025-04-14",
+      "name": "GPT-4.1 (gpt-4.1-2025-04-14)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 1047576,
+        "max_output_tokens": 32768
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+        "version": "2026-09-25",
+        "input_per_million": 2.0,
+        "cache_read_per_million": 0.5,
+        "output_per_million": 8.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4.1-mini",
+      "name": "GPT-4.1 Mini",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 1047576,
+        "max_output_tokens": 32768
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.4,
+        "cache_read_per_million": 0.1,
+        "output_per_million": 1.6
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4.1-mini-2025-04-14",
+      "name": "GPT-4.1 Mini (gpt-4.1-mini-2025-04-14)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 1047576,
+        "max_output_tokens": 32768
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.4,
+        "cache_read_per_million": 0.1,
+        "output_per_million": 1.6
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 128000,
+        "max_output_tokens": 16384
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+        "version": "2026-09-25",
+        "input_per_million": 2.5,
+        "cache_read_per_million": 1.25,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4o-2024-08-06",
+      "name": "GPT-4o (gpt-4o-2024-08-06)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 128000,
+        "max_output_tokens": 16384
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+        "version": "2026-09-25",
+        "input_per_million": 2.5,
+        "cache_read_per_million": 1.25,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o Mini",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 128000,
+        "max_output_tokens": 16384
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.15,
+        "cache_read_per_million": 0.075,
+        "output_per_million": 0.6
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-4o-mini-2024-07-18",
+      "name": "GPT-4o Mini (gpt-4o-mini-2024-07-18)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": false,
+        "reasoning_levels": [],
+        "context_window": 128000,
+        "max_output_tokens": 16384
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": false,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.15,
+        "cache_read_per_million": 0.075,
+        "output_per_million": 0.6
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5",
+      "name": "GPT-5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "version": "2026-09-25",
+        "input_per_million": 1.25,
+        "cache_read_per_million": 0.125,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-2025-08-07",
+      "name": "GPT-5 (gpt-5-2025-08-07)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "version": "2026-09-25",
+        "input_per_million": 1.25,
+        "cache_read_per_million": 0.125,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": null,
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.25,
+        "cache_read_per_million": 0.025,
+        "output_per_million": 2.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-mini-2025-08-07",
+      "name": "GPT-5 Mini (gpt-5-mini-2025-08-07)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": null,
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.25,
+        "cache_read_per_million": 0.025,
+        "output_per_million": 2.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-nano",
+      "name": "GPT-5 nano",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": null,
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "version": "2026-09-25",
+        "input_per_million": 0.05,
+        "cache_read_per_million": 0.005,
+        "output_per_million": 0.4
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-nano-2025-08-07",
+      "name": "GPT-5 nano (gpt-5-nano-2025-08-07)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": null,
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "version": "2026-09-25",
+        "input_per_million": 0.05,
+        "cache_read_per_million": 0.005,
+        "output_per_million": 0.4
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-pro",
+      "name": "GPT-5 Pro",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 272000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "version": "2026-09-25",
+        "input_per_million": 15.0,
+        "output_per_million": 120.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5-pro-2025-10-06",
+      "name": "GPT-5 Pro (gpt-5-pro-2025-10-06)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 272000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "version": "2026-09-25",
+        "input_per_million": 15.0,
+        "output_per_million": 120.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.1",
+      "name": "GPT-5.1",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "version": "2026-09-25",
+        "input_per_million": 1.25,
+        "cache_read_per_million": 0.125,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.1-2025-11-13",
+      "name": "GPT-5.1 (gpt-5.1-2025-11-13)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "version": "2026-09-25",
+        "input_per_million": 1.25,
+        "cache_read_per_million": 0.125,
+        "output_per_million": 10.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.2",
+      "name": "GPT-5.2",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "version": "2026-09-25",
+        "input_per_million": 1.75,
+        "cache_read_per_million": 0.175,
+        "output_per_million": 14.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.2-2025-12-11",
+      "name": "GPT-5.2 (gpt-5.2-2025-12-11)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "version": "2026-09-25",
+        "input_per_million": 1.75,
+        "cache_read_per_million": 0.175,
+        "output_per_million": 14.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.2-pro",
+      "name": "GPT-5.2 Pro",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+        "version": "2026-09-25",
+        "input_per_million": 21.0,
+        "output_per_million": 168.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.2-pro-2025-12-11",
+      "name": "GPT-5.2 Pro (gpt-5.2-pro-2025-12-11)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+        "version": "2026-09-25",
+        "input_per_million": 21.0,
+        "output_per_million": 168.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.3-codex",
+      "name": "GPT-5.3-Codex",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+        "version": "2026-09-25",
+        "input_per_million": 1.75,
+        "cache_read_per_million": 0.175,
+        "output_per_million": 14.0
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4",
+      "name": "GPT-5.4",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "version": "2026-09-25",
+        "input_per_million": 2.5,
+        "output_per_million": 15,
+        "cache_read_per_million": 0.25,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-2026-03-05",
+      "name": "GPT-5.4 (gpt-5.4-2026-03-05)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "version": "2026-09-25",
+        "input_per_million": 2.5,
+        "cache_read_per_million": 0.25,
+        "output_per_million": 15.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-mini",
+      "name": "GPT-5.4 Mini",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.75,
+        "cache_read_per_million": 0.075,
+        "output_per_million": 4.5
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-mini-2026-03-17",
+      "name": "GPT-5.4 Mini (gpt-5.4-mini-2026-03-17)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "version": "2026-09-25",
+        "input_per_million": 0.75,
+        "cache_read_per_million": 0.075,
+        "output_per_million": 4.5
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-nano",
+      "name": "GPT-5.4 nano",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "version": "2026-09-25",
+        "input_per_million": 0.2,
+        "cache_read_per_million": 0.02,
+        "output_per_million": 1.25
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-nano-2026-03-17",
+      "name": "GPT-5.4 nano (gpt-5.4-nano-2026-03-17)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 400000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "version": "2026-09-25",
+        "input_per_million": 0.2,
+        "cache_read_per_million": 0.02,
+        "output_per_million": 1.25
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-pro",
+      "name": "GPT-5.4 Pro",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+        "version": "2026-09-25",
+        "input_per_million": 30.0,
+        "output_per_million": 180.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.4-pro-2026-03-05",
+      "name": "GPT-5.4 Pro (gpt-5.4-pro-2026-03-05)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": false
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+        "version": "2026-09-25",
+        "input_per_million": 30.0,
+        "output_per_million": 180.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "version": "2026-09-25",
+        "input_per_million": 5.0,
+        "cache_read_per_million": 0.5,
+        "output_per_million": 30.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.5-2026-04-23",
+      "name": "GPT-5.5 (gpt-5.5-2026-04-23)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "version": "2026-09-25",
+        "input_per_million": 5.0,
+        "cache_read_per_million": 0.5,
+        "output_per_million": 30.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.6",
+      "name": "GPT-5.6 Sol",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6",
+        "version": "2026-09-25",
+        "input_per_million": 4.0,
+        "cache_read_per_million": 0.4,
+        "output_per_million": 20.0,
+        "cache_write_per_million": 5.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+        "version": "2026-09-25",
+        "input_per_million": 0.2,
+        "cache_read_per_million": 0.02,
+        "output_per_million": 1.2,
+        "cache_write_per_million": 0.25,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6",
+        "version": "2026-09-25",
+        "input_per_million": 4.0,
+        "cache_read_per_million": 0.4,
+        "output_per_million": 20.0,
+        "cache_write_per_million": 5.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-5.6-terra",
+      "name": "GPT-5.6 Terra",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+        "version": "2026-09-25",
+        "input_per_million": 2.0,
+        "cache_read_per_million": 0.2,
+        "output_per_million": 12.0,
+        "cache_write_per_million": 2.5,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "version": "2026-09-25",
+        "input_per_million": 10,
+        "output_per_million": 50,
+        "cache_read_per_million": 1,
+        "cache_write_per_million": 12.5,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "version": "2026-09-25",
+        "input_per_million": 0.1,
+        "cache_read_per_million": 0.01,
+        "cache_write_per_million": 0.125,
+        "output_per_million": 0.5,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 1050000,
+        "max_output_tokens": 128000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": true,
+        "supports_top_p": true,
+        "allowed_sampling_thinking": [
+          "off"
+        ],
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "version": "2026-09-25",
+        "input_per_million": 2.0,
+        "cache_read_per_million": 0.2,
+        "cache_write_per_million": 2.5,
+        "output_per_million": 10.0,
+        "max_input_tokens": 272000
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "o3",
+      "name": "o3",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 100000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": false,
+        "supports_top_p": false,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "version": "2026-09-25",
+        "input_per_million": 2,
+        "output_per_million": 8,
+        "cache_read_per_million": 0.5
+      }
+    },
+    {
+      "provider": "openai",
+      "id": "o3-2025-04-16",
+      "name": "o3 (o3-2025-04-16)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": null,
+        "context_window": 200000,
+        "max_output_tokens": 100000
+      },
+      "protocol": {
+        "api": "openai_responses",
+        "supports_temperature": null,
+        "supports_top_p": null,
+        "compatibility": {
+          "responses": {
+            "developer_role": true,
+            "encrypted_reasoning": true,
+            "strict_tools": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "version": "2026-09-25",
+        "input_per_million": 2.0,
+        "cache_read_per_million": 0.5,
+        "output_per_million": 8.0
+      }
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-5.5",
+      "name": "GPT-5.5 (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6-Luna (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6-Sol (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-5.6-terra",
+      "name": "GPT-5.6-Terra (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-6-astra",
+      "name": "GPT-6-Astra (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-6-luna",
+      "name": "GPT-6-Luna (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-6-sol",
+      "name": "GPT-6-Sol (ChatGPT)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "context_window": 272000,
+        "max_output_tokens": null,
+        "reasoning_budget_min": null,
+        "reasoning_budget_max": null
+      },
+      "protocol": {
+        "api": "openai_codex_responses",
+        "supports_temperature": null,
+        "supports_top_p": null
+      },
+      "pricing": null
+    },
+    {
+      "provider": "openrouter",
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Claude Haiku 4.5 (OpenRouter)",
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "system": true,
+        "streaming": true,
+        "reasoning": true,
+        "reasoning_levels": [
+          "off",
+          "low",
+          "medium",
+          "high"
+        ],
+        "context_window": 200000,
+        "max_output_tokens": 64000
+      },
+      "protocol": {
+        "api": "openai_chat",
+        "compatibility": {
+          "chat": {
+            "max_tokens_field": "legacy",
+            "instruction_role": "system",
+            "thinking_format": "openrouter",
+            "reasoning_effort": true,
+            "streaming_usage": true
+          }
+        }
+      },
+      "pricing": {
+        "source": "https://openrouter.ai/anthropic/claude-haiku-4.5/api",
+        "version": "2026-09-25",
+        "input_per_million": 1,
+        "output_per_million": 5,
+        "cache_read_per_million": 0.1
+      }
+    }
+  ]
+}

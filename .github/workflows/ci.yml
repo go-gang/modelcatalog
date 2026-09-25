@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      GOCACHE: ${{ github.workspace }}/.local/go-build
+      GOMODCACHE: ${{ github.workspace }}/.local/go-mod
+      GOTMPDIR: ${{ github.workspace }}/.local/go-tmp
+      TMPDIR: ${{ github.workspace }}/.local/tmp
+    steps:
+      - uses: actions/checkout@v5
+      - name: Prepare Go caches
+        run: mkdir -p "$GOCACHE" "$GOMODCACHE" "$GOTMPDIR" "$TMPDIR"
+      - uses: jdx/mise-action@v3
+        with:
+          tool_versions: go 1.27.1
+      - name: Test, vet and verify generated snapshot
+        run: make check

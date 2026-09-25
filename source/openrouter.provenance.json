@@ -1,0 +1,19 @@
+{
+  "source_url": "https://openrouter.ai/api/v1/models",
+  "retrieved_at": "2026-09-25T15:58:22.764803+00:00",
+  "authorization_used": false,
+  "raw_sha256": "4096b7db518d9b421b64a6b02ad9513b1fd03bc7b3e808f797ed5d3d4afecf51",
+  "raw_bytes": 753462,
+  "normalized_sha256": "42ffe19ad1a81c25fbef709d862ba36e7b200635f6b9e665896439b029886c1f",
+  "normalized_bytes": 456186,
+  "source_records": 458,
+  "snapshot_revision": "2026-09-25-providers.2",
+  "normalization": "Whitelist only model IDs, names, architecture modalities/tokenizer, token limits, supported parameters, pricing and expiration; no descriptions or unrelated fields.",
+  "references": [
+    "https://openrouter.ai/docs/guides/overview/models",
+    "https://openrouter.ai/docs/guides/routing/model-variants/overview",
+    "https://openrouter.ai/docs/api_reference/streaming",
+    "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "https://openrouter.ai/docs/api/api-reference/chat/create-a-chat-completion"
+  ]
+}

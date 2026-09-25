@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "revision": "2026-09-25-providers.2",
+  "retrieved_date": "2026-09-25",
+  "profile": "text-streaming-functions-v1",
+  "sources": [
+    "https://developers.openai.com/api/docs/models",
+    "https://developers.openai.com/api/docs/deprecations",
+    "https://developers.openai.com/api/docs/models/o3",
+    "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reasoning",
+    "https://developers.openai.com/api/docs/guides/latest-model?model=gpt-5.4",
+    "https://developers.openai.com/api/docs/models/gpt-5.4",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://learn.chatgpt.com/docs/models",
+    "https://platform.claude.com/docs/en/models/overview",
+    "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+    "https://platform.claude.com/docs/en/build-with-claude/effort",
+    "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+    "https://platform.claude.com/docs/en/about-claude/pricing",
+    "https://openrouter.ai/anthropic/claude-haiku-4.5/api",
+    "https://openrouter.ai/docs/guides/best-practices/reasoning-tokens",
+    "https://openrouter.ai/api/v1/models",
+    "https://openrouter.ai/docs/guides/overview/models",
+    "https://openrouter.ai/docs/guides/routing/model-variants/overview",
+    "https://openrouter.ai/docs/api_reference/streaming",
+    "https://openrouter.ai/docs/api/api-reference/chat/create-a-chat-completion"
+  ]
+}
